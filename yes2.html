@@ -9,27 +9,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="loadsound()">
+  <audio id="audio" src="4.ogg"></audio>
   <div class="main">
     <div class="image">
-      <img src="1.jpg" alt="#" width="150px">
+      <img src="3.jpg" alt="#" width="150px">
     </div>
     <div class="textbox">
-      <span class="caption"> Today is your birthday right?</span>
+      <span class="caption">Why u lie to me babe :(</span>
     </div>
     <div class="answerbox">
-      <a href="yes1.html">
+      <a href="happy.html">
         <div class="yes">
-          YES
-        </div>
-      </a>
-      <a href="no1.html">
-        <div class="no">
-          NO
+          Ok, Today is my birthday<br>so what?
         </div>
       </a>
     </div>
-  </div>
+    <script>
+      function loadsound() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
 </body>
 
 </html>
